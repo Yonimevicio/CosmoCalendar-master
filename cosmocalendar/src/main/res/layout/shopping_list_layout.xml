@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!--  <android.support.v7.app.AlertController.RecycleListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    >
+  <EditText
+        android:id="@+id/shopping_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="@string/shopping_list_item_name"
+        android:layout_weight="1"
+      />
+    <EditText
+        android:id="@+id/shopping_list_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="@string/shopping_list_item_number"
+        android:layout_weight="1"
+        />
+    <EditText
+        android:id="@+id/shopping_list_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="@string/shopping_list_item_price"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/shopping_list_item_add_button"
+        android:src="@mipmap/shoppingcart"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
